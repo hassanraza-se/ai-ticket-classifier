@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Ticket-Classifier
+A Next.js based tool for ticket classification using natural language processing techniques.
+This project uses a pre-trained LLMs to classify customer support tickets into different categories such as Billing, Technical, General Inquiry, Complaint, and Feature Request.
+See Preview [here](#preview)
 
-## Getting Started
+## Built With
+- Next.js (Typescript)
+- OpenRouter (free tier)
+- TailwindCSS
 
-First, run the development server:
+## Features
+- Automatic customer support ticket classification
+- Assigning priority levels to tickets
+- Estimated resolution time
+- Suggested a one-line response for support agents
 
+## Setup
+1. Clone the repository
+2. Install dependencies
+    - `npm install` (or `yarn install` or `pnpm install`)
+3. Configure environment variables
+    - Create a `.env.local` file in the root directory
+    - Add the following environment variables:
+      - `OPENROUTER_API_KEY`: Your OpenRouter API key
+      - `OPENROUTER_MODEL`: Choose a fee model from [OpenRouter](https://openrouter.ai/models?max_price=0&output_modalities=text)
+4. Run the application
 ```bash
+git clone https://github.com/hassanrazadev/ai-ticket-classifier.git
+cd ai-ticket-classifier
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
+1. Open your browser and navigate to `http://localhost:3000`
+2. Upload a customer support ticket
+3. View the classification results
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Preview
+<img src="public/preview1.png" alt="Preview Image 1">
+<img src="public/preview2.png" alt="Preview Image 2">
+<img src="public/preview3.png" alt="Preview Image 3">
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
